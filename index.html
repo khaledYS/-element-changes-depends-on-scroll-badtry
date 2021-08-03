@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>element changes depends on scroll</title>
+    <link rel="stylesheet" type="text/css" href="..\the-nxt-gen-of-normlize\nonfknuseragentstylesheet.css"> 
+    <link rel="stylesheet" type="text/css" href="css.css"> 
+</head>
+<body>
+    <div class="parent">
+        <div class="child" id="one">
+            <h3>scroll to be your own</h3>
+            <span><img src="downArrow.png" onclick="goAhead()" alt="down"></span>
+        </div>
+        <div class="child" id="two">2</div>
+        <div class="child" id="three">3</div>
+        <div class="child" id="four">4</div>
+        <div class="child" id="five">5</div>
+    </div>
+    <div class="scrollcontroller">
+        <span onclick="goIntoOne()" class="scrollcontrollers" onclick="">*</span>
+        <span onclick="goIntoTwo()" class="scrollcontrollers">*</span>
+        <span onclick="goIntoThree()" class="scrollcontrollers">*</span>
+        <span onclick="goIntoFour()" class="scrollcontrollers">*</span>
+        <span onclick="goIntoFive()" class="scrollcontrollers">*</span>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.parent{
+    height: 500vh;
+}
+.child{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: #eee;
+    font-size: 10rem;
+}
+.scrollcontroller {
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+    align-items: center;
+}
+
+.scrollcontrollers {
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#one{
+    font-family:cursive;
+    font-size: 3em;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border:solid 10px #f345
+}
+#one h3{
+    font-family:cursive;
+    font-size: 1em;
+}
+#one span{
+    cursor: pointer;
+    border-radius: 10%;
+    line-height: 65%;
+    text-align: center;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 7vw;
+}
+.scrolled{
+    position: fixed;
+    animation: ammar 1s ease;
+    right: 4%;
+    bottom: 8%;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+}@keyframes ammar{
+    0%{
+        right: 50%;
+        transform: translate(50%);
+        bottom: 100%;
+    }
+}
